@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh Airways | Minimal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #f8fafc; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); }
+    </style>
+</head>
+<body>
+    <nav class="p-6 flex justify-between items-center bg-white shadow-sm">
+        <div class="text-2xl font-bold text-indigo-600">SkyLow</div>
+        <div class="space-x-6 text-gray-600">
+            <a href="#">Explore</a><a href="#">My Trips</a><button class="bg-indigo-600 text-white px-4 py-2 rounded-full">Sign In</button>
+        </div>
+    </nav>
+
+    <div class="hero-gradient h-64 w-full flex items-center justify-center">
+        <h1 class="text-white text-4xl font-light">Where to next?</h1>
+    </div>
+
+    <div class="max-w-4xl mx-auto -mt-12 bg-white p-8 rounded-3xl shadow-xl">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="border-b-2 p-2">
+                <label class="block text-xs uppercase text-gray-400">From</label>
+                <input type="text" placeholder="London" class="w-full outline-none text-lg">
+            </div>
+            <div class="border-b-2 p-2">
+                <label class="block text-xs uppercase text-gray-400">To</label>
+                <input type="text" placeholder="New York" class="w-full outline-none text-lg">
+            </div>
+            <div class="border-b-2 p-2">
+                <label class="block text-xs uppercase text-gray-400">Date</label>
+                <input type="date" class="w-full outline-none">
+            </div>
+            <button class="bg-indigo-300 text-white rounded-xl font-bold hover:bg-indigo-700 transition">Search Flights</button>
+        </div>
+    </div>
+</body>
+</html>
