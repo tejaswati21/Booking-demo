@@ -41,11 +41,17 @@ playwright-percy-demo/
    export PERCY_TOKEN=your_percy_project_token
    ```
 
+## starting web server
+
+npm install -g http-server
+http-server -p 3000
+
+
 ## Running Tests
 
 To execute the Playwright tests with Percy integration, run:
 ```bash
-npx percy exec --verbose -- mvn test -P sample-percy-test
+npx percy exec -- node test.js
 ```
 
 ## Notes
